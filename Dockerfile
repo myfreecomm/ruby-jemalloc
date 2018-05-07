@@ -21,4 +21,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY . .
 
-ENTRYPOINT bash
+CMD ["sh", "compile_and_build.sh"]
