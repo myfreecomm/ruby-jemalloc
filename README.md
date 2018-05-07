@@ -1,6 +1,6 @@
 This repository contains all the necessary files to compile Ruby and package it into a .deb file.
 
-This guide uses an Ubuntu 14.04 (Trusty) Docker image as a base. If you need something else, create a new branch and edit the [Dockerfile](Dockerfile).
+This guide uses an Ubuntu 14.04 (Trusty) Docker image as a base. If you need something else, create a new branch and edit the [Dockerfile](Dockerfile). Docker ensures we have a clean environment with dependencies that match our production setup.
 
 ### Using a Custom Ruby Definition
 [Ruby-Build](https://github.com/rbenv/ruby-build) is a tool that abstracts away some of the pains of manually compiling Ruby.
