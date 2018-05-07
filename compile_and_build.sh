@@ -25,7 +25,3 @@ env RUBY_CONFIGURE_OPTS="--with-jemalloc --disable-install-doc" RUBY_MAKE_INSTAL
 
 echo "Building debian package"
 dpkg-deb --build $COMPILE_DEST
-
-echo "Publishing package to Gemfury"
-PACKAGE_FILE="$COMPILE_DEST.deb"
-curl -F package=@$PACKAGE_FILE https://9ryw1qeUBWiPN7PsYosx@push.fury.io/myfreecomm/
