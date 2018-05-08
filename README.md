@@ -16,7 +16,8 @@ Also change the version in the [Debian control file](DEBIAN/control)
 
 After ensuring you have a working installation of Docker and the desired `definition` file, we will build an Image of the environment necessary to compile Ruby.
 
-Build the Docker Image using this repository as a context and `ruby-jemalloc` as the image name:
+Build the Docker Image using this repository as a context and `ruby-jemalloc` as the image name.
+**If you are using a branch other than _master_, check the [documentation](https://docs.docker.com/engine/reference/commandline/build/#git-repositories) so you can modify the command below.
 
 Using GitHub SSH:
 ```shell
