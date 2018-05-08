@@ -46,10 +46,4 @@ $ ./compile_and_build.sh 2.3.7
 
 This will compile Ruby and build the `.deb` package.
 
-To publish the package to Gemfury, run the following:
-```shell
-$ curl -F package=@file https://9ryw1qeUBWiPN7PsYosx@push.fury.io/myfreecomm/
-```
-Where `file` is the path to the `.deb` package.
-
-Now the package is ready to be used.
+To publish the package to Gemfury, read [this documentation.](https://3.basecamp.com/3588114/buckets/1781679/documents/596545723)
