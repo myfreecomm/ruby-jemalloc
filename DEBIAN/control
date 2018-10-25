@@ -1,5 +1,5 @@
 Package: ruby-jemalloc
-Version: 2.3.7-3
+Version: 2.3.8
 Section: ruby
 Priority: optional
 Architecture: amd64

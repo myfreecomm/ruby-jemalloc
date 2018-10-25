@@ -9,7 +9,7 @@ It uses `definition` files to give instructions on how to build Ruby.
 Since we are compiling Ruby to be packaged to a different system instead of the same system, we have to edit the default definition file.
 More specific, we have to remove the `verify_openssl` instruction. This instruction currently cannot be used when compiling for a package.
 
-The target Ruby version for this branch is 2.3.7. If you need a different version, you will have to create a new `definition` file. Use the [Ruby-Build template directory](https://github.com/rbenv/ruby-build/tree/master/share/ruby-build) to find the desired version and remember to remove the `verify_openssl` instruction.
+The target Ruby version for this branch is 2.3.8. If you need a different version, you will have to create a new `definition` file. Use the [Ruby-Build template directory](https://github.com/rbenv/ruby-build/tree/master/share/ruby-build) to find the desired version and remember to remove the `verify_openssl` instruction.
 Also change the version in the [Debian control file](DEBIAN/control)
 
 ### Publishing a new Ruby version with jemalloc
@@ -41,7 +41,7 @@ Now you are inside the Docker image and ready to compile Ruby.
 
 Run the following command with the desired Ruby version.
 ```shell
-$ ./compile_and_build.sh 2.3.7
+$ ./compile_and_build.sh 2.3.8
 ```
 
 This will compile Ruby and build the `.deb` package.
